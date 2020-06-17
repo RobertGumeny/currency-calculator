@@ -33,6 +33,26 @@ header {
   justify-content: center;
   margin: 30px 0;
 }
+input {
+  width: 100px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.base-currency, .exchange-currency {
+  text-align: center;
+}
+
+.fa-coins {
+  color: #E09200;
+}
+
+.fa-money-bill-wave {
+  color: #85bb65;
+}
 
 .fa-rupee-sign {
   transform: translate(75%, 75%)
@@ -40,15 +60,12 @@ header {
 .fa-ruble-sign {
   transform: translate(-75%, 75%)
 }
-
 .fa-hryvnia {
   transform: translate(75%, -75%)
 }
-
 .fa-lira-sign {
   transform: translate(-75%, -75%)
 }
-
 .fa-globe {
   color: var(--secondary-color)
 }
@@ -67,9 +84,45 @@ header {
   padding: 10px;
 }
 
+#bottom-row {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#bottom-row button {
+  margin: 5px 0;
+}
+
+#currency-key h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 #get-rate{
+  cursor: pointer;
   background-color: var(--secondary-color);
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+#get-rate:hover{
+  background-color: #66B2B7;
+}
+
+#get-rate:active{
+  transform: scale(0.97)
+}
+
+#get-rate:focus{
+  outline: none;
+}
+
+#split-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#split-lists ul {
+  list-style-type: none;
 }

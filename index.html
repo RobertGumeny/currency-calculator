@@ -21,12 +21,11 @@
     <div class="grid-item"><i class="fas fa-hryvnia fa-3x"></i></div>
     <div class="grid-item"><i class="fas fa-pound-sign fa-3x"></i></div>
     <div class="grid-item"><i class="fas fa-lira-sign fa-3x"></i></div>
-
-
   </header>
   <main>
+    <h1>Currency Exchange Calculator</h1>
     <div class="base-currency">
-      <label for="base">Select Base Currency: </label>
+      <label for="base"><i class="fas fa-money-bill-wave"></i></label>
       <select name="base" id="base-currency">
         <option value="USD" selected>USD</option>
         <option value="EUR">EUR</option>
@@ -43,7 +42,7 @@
       <input type="number" id="base-amount" placeholder="1" value="1">
     </div>
     <div class="exchange-currency">
-      <label for="exchange">Select Exchange Currency: </label>
+      <label for="exchange"><i class="fas fa-money-bill-wave"></i></label>
       <select name="exchange" id="exchange-currency">
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
@@ -55,16 +54,38 @@
         <option value="NZD">NZD</option>
         <option value="CHF">CHF</option>
         <option value="BGN">BGN</option>
-        <option value="MYR">MYR</option>
       </select>
       <input type="number" id="exchange-amount"></input>
     </div>
-    <button id="get-rate"><i class="fas fa-sync-alt"></i> Get Rate</button>
-    <div id="display"></div>
+    <div id="bottom-row">
+      <div id="display"></div>
+      <button id="get-rate"><i class="fas fa-sync-alt"></i> Get Rate</button>
+    </div>
 
   </main>
 
-  <footer></footer>
+  <footer>
+    <div id="currency-key">
+      <h2>Currency Key</h2>
+      <div id="split-lists">
+        <ul>
+          <li><i class="fas fa-coins"></i> USD - US Dollar </li>
+          <li><i class="fas fa-coins"></i> EUR - Euro </li>
+          <li><i class="fas fa-coins"></i> CAD - Canadian Dollar </li>
+          <li><i class="fas fa-coins"></i> AUD - Australian Dollar </li>
+          <li><i class="fas fa-coins"></i> GBP - Pound Sterling </li>
+        </ul>
+        <ul>
+          <li><i class="fas fa-coins"></i> JPY - Japanese Yen</li>
+          <li><i class="fas fa-coins"></i> HKD - Hong Kong Dollar </li>
+          <li><i class="fas fa-coins"></i> NZD - New Zealand Dollar </li>
+          <li><i class="fas fa-coins"></i> CHF - Swiss Franc </li>
+          <li><i class="fas fa-coins"></i> BGN - Bulgarian Lev </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
   </footer>
   <script src="script.js"></script>
 </body>
