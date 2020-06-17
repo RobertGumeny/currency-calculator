@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Currency Calculator</title>
+</head>
+
+<body>
+  <div class="base-currency">
+    <label for="base">Select Base Currency: </label>
+    <select name="base" id="base-currency">
+      <option value="USD" selected>USD</option>
+      <option value="EUR">EUR</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="HKD">HKD</option>
+      <option value="NZD">NZD</option>
+      <option value="CHF">CHF</option>
+      <option value="BGN">BGN</option>
+      <option value="MYR">MYR</option>
+    </select>
+    <input type="number" id="base-amount" placeholder="1" value="1">
+  </div>
+  <div class="exchange-currency">
+    <label for="exchange">Select Exchange Currency: </label>
+    <select name="exchange" id="exchange-currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="GBP" selected>GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="HKD">HKD</option>
+      <option value="NZD">NZD</option>
+      <option value="CHF">CHF</option>
+      <option value="BGN">BGN</option>
+      <option value="MYR">MYR</option>
+    </select>
+    <div id="exchange-amount"></div>
+  </div>
+  <button id="get-rate">Get Rate</button>
+  <div id="display"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
