@@ -22,8 +22,8 @@ function getResults() {
           const rate = data.rates[currency];
           if (currency == exchangeCurrency) {
             let rateTotal = rate * baseAmount
-            displayArea.innerText = `${baseAmount} ${baseCurrency} = ${rateTotal} ${exchangeCurrency}`
-            exchangeAmount.setAttribute("value", `${rateTotal}`)
+            displayArea.innerText = `${baseAmount} ${baseCurrency} = ${rateTotal.toFixed(2)} ${exchangeCurrency}`
+            exchangeAmount.setAttribute("value", `${rateTotal.toFixed(2)}`)
           }
         }
       }

@@ -6,47 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c476181ec4.js" crossorigin="anonymous"></script>
   <title>Currency Calculator</title>
 </head>
 
 <body>
-  <div class="base-currency">
-    <label for="base">Select Base Currency: </label>
-    <select name="base" id="base-currency">
-      <option value="USD" selected>USD</option>
-      <option value="EUR">EUR</option>
-      <option value="CAD">CAD</option>
-      <option value="AUD">AUD</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="HKD">HKD</option>
-      <option value="NZD">NZD</option>
-      <option value="CHF">CHF</option>
-      <option value="BGN">BGN</option>
-      <option value="MYR">MYR</option>
-    </select>
-    <input type="number" id="base-amount" placeholder="1" value="1">
-  </div>
-  <div class="exchange-currency">
-    <label for="exchange">Select Exchange Currency: </label>
-    <select name="exchange" id="exchange-currency">
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="CAD">CAD</option>
-      <option value="AUD">AUD</option>
-      <option value="GBP" selected>GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="HKD">HKD</option>
-      <option value="NZD">NZD</option>
-      <option value="CHF">CHF</option>
-      <option value="BGN">BGN</option>
-      <option value="MYR">MYR</option>
-    </select>
-    <div id="exchange-amount"></div>
-  </div>
-  <button id="get-rate">Get Rate</button>
-  <div id="display"></div>
+  <header class="grid-container">
+    <div class="grid-item"><i class="fas fa-rupee-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-dollar-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-ruble-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-euro-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-globe fa-10x"></i></div>
+    <div class="grid-item"><i class="fas fa-yen-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-hryvnia fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-pound-sign fa-3x"></i></div>
+    <div class="grid-item"><i class="fas fa-lira-sign fa-3x"></i></div>
 
+
+  </header>
+  <main>
+    <div class="base-currency">
+      <label for="base">Select Base Currency: </label>
+      <select name="base" id="base-currency">
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="HKD">HKD</option>
+        <option value="NZD">NZD</option>
+        <option value="CHF">CHF</option>
+        <option value="BGN">BGN</option>
+        <option value="MYR">MYR</option>
+      </select>
+      <input type="number" id="base-amount" placeholder="1" value="1">
+    </div>
+    <div class="exchange-currency">
+      <label for="exchange">Select Exchange Currency: </label>
+      <select name="exchange" id="exchange-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="GBP" selected>GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="HKD">HKD</option>
+        <option value="NZD">NZD</option>
+        <option value="CHF">CHF</option>
+        <option value="BGN">BGN</option>
+        <option value="MYR">MYR</option>
+      </select>
+      <input type="number" id="exchange-amount"></input>
+    </div>
+    <button id="get-rate"><i class="fas fa-sync-alt"></i> Get Rate</button>
+    <div id="display"></div>
+
+  </main>
+
+  <footer></footer>
+  </footer>
   <script src="script.js"></script>
 </body>
 

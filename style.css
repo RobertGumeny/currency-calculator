@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #EFE6DD;
+  --primary-color: #BB4430;
+  --secondary-color: #7EBDC2;
+  --font-color: #231f20;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: 'Roboto Mono', monospace;
+}
+
+footer a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: var(--font-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.fa-rupee-sign {
+  transform: translate(75%, 75%)
+}
+.fa-ruble-sign {
+  transform: translate(-75%, 75%)
+}
+
+.fa-hryvnia {
+  transform: translate(75%, -75%)
+}
+
+.fa-lira-sign {
+  transform: translate(-75%, -75%)
+}
+
+.fa-globe {
+  color: var(--secondary-color)
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#get-rate{
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
