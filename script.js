@@ -18,6 +18,10 @@ function getResults() {
       for (const currency in data.rates) {
         if (baseCurrency == exchangeCurrency) {
           displayArea.innerText = `Cannot calculate exchange rate between identical currencies.`
+        } else if (baseAmount <= 0) {
+          displayArea.innerText = `${baseAmount} is an invalid input, please enter an amount greater than 0.`
+          baseAmountError();
+          setTimeout(baseAmountErrorCleared, 2000)
         } else if (data.rates.hasOwnProperty(currency)) {
           const rate = data.rates[currency];
           if (currency == exchangeCurrency) {
@@ -30,6 +34,13 @@ function getResults() {
     })
 }
 
+function baseAmountError() {
+  baseAmountElem.classList.add('error');
+}
+
+function baseAmountErrorCleared() {
+  baseAmountElem.classList.remove('error');
+}
 
 getRateButton.addEventListener('click', getResults)
 getResults()

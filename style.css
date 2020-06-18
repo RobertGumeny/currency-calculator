@@ -53,6 +53,10 @@ main h1 {
   text-align: center;
 }
 
+.error {
+  border: 2px solid red;
+}
+
 .fa-coins {
   color: #E09200;
 }
